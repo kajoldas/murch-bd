@@ -6,7 +6,7 @@ const MyTask = () => {
     const [tasks, setTasks] = useState([]);
 
     useEffect(() => {
-        fetch('https://fierce-sands-85550.herokuapp.com/tasks')
+        fetch('https://frozen-refuge-91401.herokuapp.com/tasks')
             .then(res => res.json())
             .then(data => setTasks(data))
     }, [])

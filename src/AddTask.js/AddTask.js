@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 const AddTask = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = (data) => {
-        fetch("https://fierce-sands-85550.herokuapp.com/tasks", {
+        fetch("https://frozen-refuge-91401.herokuapp.com/tasks", {
             method: "post",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data),
@@ -38,7 +38,7 @@ const AddTask = () => {
                 <textarea className='w-25 my-1 h-25' {...register("description")} placeholder="description" /> <br />
                 <input className='w-25 my-1' type="date" {...register("date")} /> <br />
                 <input className='w-25 my-1' {...register("img")} placeholder="Additional Image Path" /> <br />
-                <input className='w-25 my-1' className="btn btn-primary" type="submit" />
+                <input className='w-25 my-1' type="submit" />
             </form>
         </div>
     );
