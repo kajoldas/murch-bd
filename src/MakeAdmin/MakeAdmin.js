@@ -8,7 +8,7 @@ const MakeAdmin = () => {
 
 
     const onSubmit = (data) => {
-        fetch("http://localhost:5000/tasks", {
+        fetch("https://fierce-sands-85550.herokuapp.com/tasks", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data),
